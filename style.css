@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+body {
+	background-color: #458EB0;
+	font-family: 'Roboto', Verdana, Arial, sans-serif;
+	margin: 0;
+	text-align: justify;
+}
+
+a {
+	font-weight: bold;
+	color: #d9710d;
+	text-decoration: none;
+}
+
+header {
+	color: white;
+	text-align: center;
+}
+
+header h1 {
+	font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
+	padding: 32px 0 32px 0;
+	margin: 0 24px;
+}
+
+header nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+header nav ul li {
+	background-color: #d9710d;
+	margin: 0 32px 16px 32px;
+	padding: 0;
+}
+
+header nav ul li:hover,
+header nav ul li:active,
+header nav ul .current-page {
+	background-color: #875239;
+}
+
+header nav ul li a {
+	display: inline-block;
+	color: white;
+	padding: 4px 24px;
+}
+
+header nav ul li a:not(#buttonLangSwitch) {
+	box-sizing: border-box;
+	width: 100%;
+}
+
+main {
+	background-color: white;
+	padding: 8px 32px;
+}
+
+footer {
+	color: white;
+	margin: 0 32px;
+}
+
+footer h3 {
+	display: inline-block;
+	border-bottom: #d9710d solid 2px;
+	margin-bottom: 0;
+}
+
+.button-lang-switch {
+	padding: 0;
+}
+
+.img-full-width,
+.img-float-left,
+.img-float-right {
+	border-radius: 16px;
+}
+
+.img-full-width {
+	width: 100%;
+	height: auto;
+}
+
+.clearfix {
+	clear: both;
+}
+
+@media (max-width: 991px) {
+	.img-float-left,
+	.img-float-right {
+		width: 100%;
+		height: auto;
+		margin-bottom: 8px;
+	}
+
+	p + p .img-float-left,
+	p + p .img-float-right {
+		margin-top: 16px;
+	}
+}
+
+@media (min-width: 992px) {
+	header nav ul li {
+		display: inline-block;
+		margin: 0 16px 40px 16px;
+	}
+
+	main {
+		padding: 8px 128px;
+	}
+
+	footer {
+		display: flex;
+		margin: 0 128px;
+	}
+
+	footer div {
+		flex: 0 0 auto;
+		width: 50%;
+	}
+
+	footer div + div {
+		margin-left: 16px;
+	}
+
+	.img-float-left {
+		margin: 0 16px 16px 0;
+		float: left;
+	}
+
+	.img-float-right {
+		margin: 0 0 16px 16px;
+		float: right;
+	}
+}
+
+@media (min-width: 1200px) {
+	main {
+		padding: 8px 256px;
+	}
+
+	footer {
+		margin: 0 256px;
+	}
+}
