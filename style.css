@@ -90,6 +90,14 @@ footer h3 {
 }
 
 @media (max-width: 991px) {
+	main img:first-child {
+		margin-top: -24px;
+	}
+
+	main > img:last-child {
+		margin-bottom: -12px;
+	}
+
 	.img-full-width,
 	.img-float-left,
 	.img-float-right {
