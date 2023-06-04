@@ -57,6 +57,14 @@ main {
 	padding: 8px 32px;
 }
 
+ul {
+	padding-left: 16px;
+}
+
+ul li {
+	margin-bottom: 8px;
+}
+
 footer {
 	color: white;
 	margin: 0 32px;
